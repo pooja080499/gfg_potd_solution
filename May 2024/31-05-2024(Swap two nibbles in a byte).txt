@@ -1,4 +1,4 @@
-///java code..
+///java code...
 
 class Solution {
     static int swapNibbles(int n) {
