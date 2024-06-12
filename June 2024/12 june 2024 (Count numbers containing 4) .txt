@@ -1,0 +1,38 @@
+// Count numbers containing 4
+///java code....
+
+
+
+class Solution {
+    
+    public static boolean check4(int n)
+    {
+        do
+        {
+            if(n%10==4)
+            {
+                return true;
+            }
+            n=n/10;
+        }while(n>0);
+        
+        
+        return false;
+    }
+    public static int countNumberswith4(int n) {
+        
+        int count=0;
+        
+        for(int i=1;i<=n;i++)
+        {
+            
+            if(check4(i))
+            {
+                count++;
+            }
+        }
+        
+        
+        return count;
+    }
+}
