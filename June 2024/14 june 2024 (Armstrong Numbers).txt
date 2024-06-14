@@ -1,0 +1,27 @@
+// User function Template for Java
+class Solution {
+    static String armstrongNumber(int n) {
+        
+        int a=n;
+        int no=0;
+        
+        do
+        {
+            int rem=a%10;
+            no=no+(rem*rem*rem);
+            
+            a=a/10;
+            
+        }while(a>0);
+        
+        if(no==n)
+        {
+            return "true";
+        }
+        else
+        {
+            return "false";
+        }
+        
+    }
+}
