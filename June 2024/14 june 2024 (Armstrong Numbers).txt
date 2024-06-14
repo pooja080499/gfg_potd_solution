@@ -1,4 +1,7 @@
-// User function Template for Java
+// java code.....
+
+
+
 class Solution {
     static String armstrongNumber(int n) {
         
