@@ -7,6 +7,8 @@ class Solution {
             {
                 binary='0'+binary;
             }
+
+
         String newbinary=binary.substring(4)+binary.substring(0,4);
         int decimal=Integer.parseInt(newbinary,2); 
         return decimal;
