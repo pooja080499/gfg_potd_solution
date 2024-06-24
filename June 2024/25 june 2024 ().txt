@@ -1,0 +1,23 @@
+class Solution {
+    int[][] rotateMatrix(int k, int mat[][]) {
+        
+        int pos=k%mat[0].length;
+        
+        //System.out.println(pos);
+        
+        int[][] ans=new int[mat.length][mat[0].length];
+        
+        for(int i=0;i<mat.length;i++)
+        {
+            for(int j=0;j<mat[0].length;j++)
+            {
+                int newj=j-pos;
+               while(newj<0)
+                {newj=mat[0].length+newj;}
+                ans[i][newj]=mat[i][j];
+            }
+        }
+        
+        return ans;
+    }
+}
